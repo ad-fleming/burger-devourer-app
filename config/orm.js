@@ -2,28 +2,28 @@ const connection = require ("./connection.js");
 
 const orm = {
     // Select all from the table
-    selectAll: function(tableInput){
+    selectAll: function(tableInput, cb){
         let queryString = "SELECT * FROM ??";
         connection.query(queryString, [tableInput], (err,result)=>{
             if (err) throw err;
-            console.log(result);
+            cb(result);
         })
     }, 
     // Insert into the table, this info right here
-    insertOne: function(tableInput, burgerName){
-        let queryString = "INSERT INTO ?? (burger_name) VALUES (?)";
-        connection.query(queryString, [tableInput, burgerName], (err, data)=>{
+    insertOne: function(tableInput, col, val, cb){
+        let queryString = `INSERT ${tableInput} (${col}) VALUES ('${val}')`;
+        connection.query(queryString, (err, result)=>{
             if (err) throw err;
-            console.log (result);
+            cb(result);
         })
 
     },
     // Go to this table, 
-    updateOne: function(tableInput, thingToUpdate, burgerName){
-        let queryString = `UPDATE ?? SET ?? = true WHERE burger_name =?`;
-        connection.query(queryString, [queryString, tableInput, thingToUpdate, burgerName], (err, data)=>{
+    updateOne: function(tableInput, thingToUpdate, burgerId, cb){
+        let queryString = `UPDATE ?? SET ?? = true WHERE id =?`;
+        connection.query(queryString, [tableInput, thingToUpdate, burgerId], (err, result)=>{
             if(err) throw err;
-            console.log(result);
+            cb(result);
         })
 
     }
