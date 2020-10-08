@@ -6,8 +6,8 @@ FUNCTIONS USING BURGER-SPECIFIC INPUT */
 // CODE GOES HERE
 // ==========================
 
-const ormCalls = {
-
+const burger = {
+    // WE USE ORMS HERE to create BURGER-SPECIFIC METHODS in an object
 }
 // EX) orm.exampleMETHODNAME("BURGER INFO1", "BURGER INFO2", "BURGER INFO 3");
 
@@ -16,6 +16,6 @@ const ormCalls = {
 
 
 
-// TODO: EXPORT burger.js
+// TODO: EXPORT for burger controller
 
-module.exports = ormCalls;
+module.exports = burger;
