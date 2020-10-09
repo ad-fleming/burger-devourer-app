@@ -1,7 +1,18 @@
+body{
+  background-color: #F1CF59 !important;
+  font-family: 'Permanent Marker', cursive !important;
+}
 li {
+  font-size: 1.5em !important;
+}
+.pre-devoured-li:hover{
+  font-size: larger;
+}
+.post-devoured-li {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
+    background: black;
+    color: #F1CF59;
     list-style: none;
   }
   
@@ -15,10 +26,40 @@ li {
     background:none;
   }
 
+  .change-devour{
+    background-color:#F1CF59;
+    color: black !important;
+    border-radius: 10%;
+  }
+  .change-devour:hover{
+    background-color:black;
+    color: #F1CF59 !important;
+    border-radius: 10%;
+  }
+  .submit-button{
+    background-color:#F1CF59;
+    color: black !important;
+    border-radius: 10%;
+    font-size: 1.5em;
+  }
+
+  .submit-button:hover{
+    background-color:black;
+    color: #F1CF59 !important;
+    border-radius: 10%;
+  }
+
+  #burger-img{
+    width: 250px;
+    height: 200px;
+  }
+
   #burg {
     width: 500px;
     height: 125px;
     text-align: center;
+    color: white;
+    background: black;
   }
 
   

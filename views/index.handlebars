@@ -1,5 +1,8 @@
 
 <div class="container my-3">
+  <div class="container d-flex justify-content-center">
+    <img id="burger-img" src="burger.png" alt="">
+  </div>
   <h1 class="text-center">Burger Devourer</h1>
   <div class="col-sm-12 my-3">
     <div class="row d-flex justify-content-between">
@@ -14,19 +17,12 @@
       <ul class="col-sm-5">
         {{#each burgers}}
           {{#if devoured}}
-            <li class="d-flex justify-content-between">
+            <li class="post-devoured-li d-flex my-3 justify-content-between">
               {{id}}. {{burger_name}}
             </li>
           {{/if}}
         {{/each}}
       </ul>
-      {{!-- <ul class="col-sm-5">
-        {{#each burgers}}
-          {{#if devoured}}
-            {{id}}. {{burger_name}}
-          {{/if}}
-        {{/each}}
-      </ul> --}}
 
     </div>
   </div>
@@ -38,7 +34,7 @@
           <input type="text" id="burg" name="name" placeholder="What kind of burger would you like?">
         </div>
         <p class="text-center">
-          <button class="justify-content-center" type="submit">Add Burger</button>
+          <button class="submit-button justify-content-center" type="submit">Add Burger</button>
         </p>
       </form>
     </div>
