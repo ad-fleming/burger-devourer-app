@@ -1,37 +1,48 @@
-<h1>Burger Devourer</h1>
 
-<h2>Burgers to Devour</h2>
+<div class="container my-3">
+  <h1 class="text-center">Burger Devourer</h1>
+  <div class="col-sm-12 my-3">
+    <div class="row d-flex justify-content-between">
+      <ul class="col-sm-5">
+        {{#each burgers}}
+          {{#unless devoured}}
+            {{> burgers/burger-block devoured=true}}
+          {{/unless}}
+        {{/each}}
+      </ul>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+      <ul class="col-sm-5">
+        {{#each burgers}}
+          {{#if devoured}}
+            <li class="d-flex justify-content-between">
+              {{id}}. {{burger_name}}
+            </li>
+          {{/if}}
+        {{/each}}
+      </ul>
+      {{!-- <ul class="col-sm-5">
+        {{#each burgers}}
+          {{#if devoured}}
+            {{id}}. {{burger_name}}
+          {{/if}}
+        {{/each}}
+      </ul> --}}
 
-<h2>Devoured Burgers</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{burger_name}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="burg">Burger Name:</label>
-    <input type="text" id="burg" name="name" placeholder="What kind of burger would you like?">
+    </div>
   </div>
+  <div class="container col-12 d-flex justify-content-center">
+    <div class="row">
+      <form class=" col-sm-12 create-form">
+        <div class="form-group">
+          <label for="burg"></label>
+          <input type="text" id="burg" name="name" placeholder="What kind of burger would you like?">
+        </div>
+        <p class="text-center">
+          <button class="justify-content-center" type="submit">Add Burger</button>
+        </p>
+      </form>
+    </div>
+  </div>
+  
+</div>
 
-  {{!-- <div class="form-group">
-    <label for="sleepy">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div> --}}
-  <button type="submit">Add Burger</button>
-</form>

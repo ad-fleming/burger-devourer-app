@@ -2,17 +2,25 @@ li {
     padding: 5px;
     margin: 5px;
     background: #faebd7;
+    list-style: none;
   }
   
   .label {
     font-weight: bold;
   }
   
-  .create-update-form {
+  .create-form {
     padding: 5px;
     margin: 5px;
-    background: aqua;
+    background:none;
   }
+
+  #burg {
+    width: 500px;
+    height: 125px;
+    text-align: center;
+  }
+
   
   .form-group {
     margin-bottom: 5px;
