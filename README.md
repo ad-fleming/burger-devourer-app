@@ -42,16 +42,22 @@ Note that if users would like to deploy this app to heroku, they will need creat
 ![Demo](public/assets/images/burger-gif.gif)
 
 ## Contributors
-
+<hr>
 This project was completed as assignment toward my certification with the __Georgia Tech Coding Boot Camp__. 
 
 I completed with the review and guidance of my tutor.
 
 ## License
+<hr>
 This project is covered under the MIT license 
+<br>
+<br>
 
 ## Links
+<hr>
+
 * [Video Link](https://drive.google.com/file/d/1LwxdlU3qz8KlriV37px5FqnM-mJ73SuM/view)
 * [Repository](https://drive.google.com/file/d/1LwxdlU3qz8KlriV37px5FqnM-mJ73SuM/view)
 * [Deployed Site](https://burger-devourer-app-102020.herokuapp.com/)
+* [See My Portfolio](https://ad-fleming.github.io/updated-portfolio/)
 
