@@ -31,9 +31,13 @@ Note that if users would like to deploy this app to heroku, they will need creat
 
 ![Entering a burger](public/assets/images/burger-enter.png)
 
+<br>
+
 ![Devoured Burgers](public/assets/images/burger-devoured.png)
 
-### DEMO
+<br>
+
+#### DEMO
 
 ![Demo](public/assets/images/burger-gif.gif)
 
